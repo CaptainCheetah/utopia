@@ -1,0 +1,14 @@
+.dice-cup {
+	border: 1px solid #ffffff;
+	margin: auto auto auto 0;
+	padding: 12px;
+	width: fit-content;
+}
+
+.dice-container {
+  display: inline-block;
+}
+
+button {
+  margin: 6px;
+}

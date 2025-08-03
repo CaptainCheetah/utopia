@@ -1,0 +1,57 @@
+.die {
+  display: inline-block;
+  margin: 6px;
+  padding: 6px;
+  background:linear-gradient(-45deg, red, red 50%, white 50%, white);
+  cursor: not-allowed;
+  opacity: .45;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+	border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+}
+
+.die.displayOnly {
+  background: unset;
+  background-color: rgba(255,255,255,0.25);
+  color: #ffffff;
+  cursor: unset;
+  opacity: 1;
+  border: 1px solid #ffffff;
+}
+
+.rolling {
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation-name: die-roll;
+}
+
+.rolled {
+  animation: unset;
+}
+
+.isAvailable {
+  background: unset;
+  opacity: unset;
+  background-color: #ffffff;
+  cursor: grab;
+}
+
+.isAvailable:hover {
+  transform: rotate(-15deg);
+}
+
+@keyframes die-roll {
+  from {
+    transform: rotate(0deg);
+    color: #ffffff;
+  }
+  to {
+    transform: rotate(720deg);
+    color: #000000;
+  }
+}

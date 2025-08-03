@@ -1,0 +1,39 @@
+
+
+.cell {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0 6px;
+  width: 24px;
+  font-weight: bolder;
+  line-height: 32px;
+  font-size: 24px;
+  height: 36px;
+}
+
+.row.difference .cell {
+  background-color: rgb(245, 245, 169);
+}
+
+.cell.drop-zone.drag-over {
+  background-color: #aaaaaa;
+}
+
+.area > .row {
+	border-radius: 12px;
+	overflow: hidden;
+	flex-basis: 100%;
+	text-wrap: nowrap;
+}
+
+.area> .row:not(:last-of-type) {
+	margin-bottom: 6px;
+}
+
+.area {
+	display: flex;
+	flex-wrap: wrap;
+	width: min-content;
+	margin: auto;
+}
